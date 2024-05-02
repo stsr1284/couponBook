@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.headerWrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color:  #7694AB;
+}
+
+.header {
+	box-shadow: 0 0 3px #000;
+}
+
+.headerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 20px;
+}
+
+.headerStart {
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+}
+
+.headerTitle {
+	font-size: 1.5rem;
+	margin-right: 7px;
+	margin-left: 5px;
+	text-decoration: none;
+	color: #fff;
+}
