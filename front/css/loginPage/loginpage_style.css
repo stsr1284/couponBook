@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form {
+    border-radius: 30px;
+    margin-top: 190px;
+    border: solid 4px;
+    border-color: #7694AB; 
+    width: 70%;
+    min-width: 450px;
+    max-width: 600px;
+    height: 400px;
+    position: relative;
+}
+
+.signin-form h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 80px;
+}
+
+.int-area { 
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom:10px;
+    position: relative;
+    
+}
+
+.int-area:first-child {margin-top: 0;}
+
+.int-area input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    border:2px solid #C7E2F6;
+    border-bottom: 2px solid #C7E2F6;
+    font-size: 18px; color: #1a1919;
+    outline: none; 
+}
+
+.int-area label {
+    margin-left:3%;
+    position: absolute; left: 10px; top: 15px;
+    font-size: 18px;  color: #636363;
+    transition: top .5s ease;
+}
+
+.int-area input:focus + label,
+.int-area input:valid + label {
+    top: 5px;
+    font-size: 13px; color: #166cea;
+}
+
+.action{ 
+    display: flex;
+}
+
+.btn-area {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    gap: 40px;
+}
+
+.btn-area button {
+    width: 30%; height: 50px;
+    background: #7694AB;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 30%; height: 50px;
+    background: #7694AB;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

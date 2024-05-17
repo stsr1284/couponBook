@@ -3,12 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/group.css">
 	<link rel="stylesheet" href="../css/headerStyle.css">
 	<script src="https://kit.fontawesome.com/05d1420fac.js" crossorigin="anonymous"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 	<title>Main</title>
 </head>
@@ -19,15 +16,25 @@
 				<h1 class="headerStart">
 					<a class="headerTitle" href="">티끌모아</a>
 				</h1>
+				<div class="headerEnd">
+					<!-- 밑 로그인, 로그아웃은 로그인 세션 조건부로 둘 중 하나만 나오게 하기 -->
+					<c:choose>
+						<c:when test="${sessionScope.userNick == null}">
+							<a href="../loginPage/loginpage.do">
+								<!-- <button class="headerLogin">로그인</button> -->
+							</a>
+						</c:when>
+					<c:otherwise>
+							<a href="../loginPage/logOut.do">	
+								<button class="headerLogin">로그아웃</button>
+							</a>	
+						</c:otherwise>
+					</c:choose> 
+				</div>
 			</div>
 		</nav>
-	</div> <!-- header end -->
+	</div> <!-- header end -->	
 	
-	<div class="centerWrapper">
-		<div class="select">
-			<h2>쿠폰 검색</h2>
-		</div>
-	</div>
 	<div class="contentWrapper">
 		<ul class="content">
 			<li>

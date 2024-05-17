@@ -1,6 +1,10 @@
 
 .contentWrapper {
-    background-color: #ffff;
+    background-color: red;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .content {

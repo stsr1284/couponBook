@@ -30,12 +30,12 @@
 	padding-bottom: 4px;
 }
 
-.headerStart {
+/* .headerStart {
 	margin: 0;
 	height: 40px;
 	line-height: 40px;
 	padding-right: 10px;
-}
+} */
 
 .headerTitle {
 	font-family: "Briem Hand";
@@ -46,13 +46,8 @@
 	color: #fff;
 }
 
-.fa-search {
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 1.2rem;
-}
 
-.headerHamburger {
+.headerLogin {
 	font-family: "Noto Sans KR";
 	font-weight: 300;
 	border: solid 2px #C7E2F6;
