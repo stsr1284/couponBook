@@ -1,6 +1,6 @@
 .couponsContainer {
     display: flex;
-	width: 280px;
+	width: 250px;
 	height: 100px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .storeSubject {
-	font-size: 28px;
+	font-size: 21px;
 	color: black;
 }
 
