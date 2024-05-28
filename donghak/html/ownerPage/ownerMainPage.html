@@ -18,46 +18,36 @@
         </div>
     </div> <!-- 헤더 종료 -->
 
-	<div class="ownerInformWrapper">
-		<div class="storeInform">
-			<form action="" method = "POST">
-				<div class="inputArea">
-					<input type ="text" name ="storeName" autocomplete="off" required>
-					<label for ="storeName"> 업체명</label> <!-- 여기 텍스트에 데이터 넣어주면 됩니다 -->
-				</div>
-				<div class="inputArea">
-					<input type="text" name="storePlaceName" autocomplete="off" required >
-					<label for="storePlaceName">지점명</label>
-				</div>
-				<div class="inputArea">
-					<input type="text" name="storeId" autocomplete="off" required >
-					<label for="storeId">사업자번호</label>
-				</div>
-				<div class="inputArea">
-					<input type="text" name="storeNumber" autocomplete="off" required >
-					<label for="storeNumber">전화번호</label>
-				</div>
-				<div class="inputArea">
-					<input type="text" name="storeAddress" autocomplete="off" required >
-					<label for="storeAddress">주소</label>
-				</div>
-				<div class="btnArea">
-					<button type="submit">변경하기</button>
-				</div>
-			</form>
-		</div>
-		<div>
-			<!-- 메뉴 등록 -->
-		</div>
-		<div>
-			<!-- 스탬프 승인 요청 페이지 -->
-		</div>
-		<div class="couponInform">
-			
-			
-		</div>
-		<div >
-			<!-- 쿠폰 삭제 버튼 -->
+	<div class="ownerMainWrapper">
+		<div class="ownerMain">
+			<div class="btnWrapper">
+				<a href="" class="informUpdate">정보 수정</a> <!-- "메뉴 등록"은 정보 수정에서-->
+				<a href="" class="couponUpdate">쿠폰 수정</a> <!-- "쿠폰 삭제"는 쿠폰 수정에서-->
+			</div>
+			<div class="requestList">
+				<div class="requestListText">요청목록</div>
+				<div class="requestWrapper"> <!-- 반복 시작 -->
+					<span class="userNameText">닉네임</span>
+					<span class="responseWrapper">
+						<form action="" method="POST">
+							<select id="" name="">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+							<button type="submit">승인</button>
+							<button type="submit">취소</button>
+						</form>
+					</span>
+				</div> <!-- 반복 끝 -->
+			</div>
 		</div>
 	</div>
 </body>

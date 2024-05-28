@@ -1,4 +1,108 @@
-.ownerInformWrapper {
-	/* padding-top: 60px; */
-	background-color: aqua;
+.ownerMainWrapper {
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+
+	background-color: rgb(255, 253, 208);
+	/* align-items: center; */
+	/* background-color: aqua; */
+}
+
+.ownerMain {
+	width: 95%;
+
+	/* height: 70%; */
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+	/* background-color: rgb(255, 253, 208); */
+	/* background-color:cornflowerblue */
+}
+
+.btnWrapper {
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+
+	/* background-color:chartreuse; */
+}
+
+.btnWrapper a {
+	display:inline-block;
+	text-decoration: none;
+	color: black;
+	border: solid 2px black;
+	border-radius: 13px;
+	margin-top: 7px;
+	padding: 3px;
+}
+
+.informUpdate {
+	margin-right: 6x;
+}
+
+.couponUpdate {
+	margin-left: 6px;
+}
+
+.requestList {
+	/* background-color: white; */
+
+}
+
+.requestWrapper {
+	width: 100%;
+	height: 35px;
+	text-align:center;
+	margin-top: 10px;
+	/* border: solid 1px black; */
+	/* background-color:aliceblue; */
+	background-color: #fbfbfb;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	
+	/* background-color: pink; */
+}
+
+.requestListText {
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+	width: 80px;
+	border-bottom: solid 1.5px;
+	color:darkgray;
+	font-size: 17px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/* background-color: #fbfbfb; */
+	
+	/* background-color: pink; */
+}
+
+.userNameText {
+	font-size: 16px;
+	margin-left: 6px;
+
+	/* background-color:aqua */
+}
+
+.responseWrapper {
+	margin-top: 7px;
+	text-align: end;
+	width: 75%;
+	display: inline-block;
+
+	/* background-color:aqua */
+}
+
+.responseWrapper select {
+	margin-right: 5px;
+	
+}
+
+.responseWrapper button {
+	border: none;
+	cursor: pointer;
+	background-color: white;
+	font-size: 13px;
+	padding: 4px;
+	margin-right: 4px;
+	background-color:aqua
 }
