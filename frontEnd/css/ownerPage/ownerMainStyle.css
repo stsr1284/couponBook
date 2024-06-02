@@ -156,7 +156,7 @@
 
 /* 모달 대화 상자 스타일 */
 .informUpdateModal {
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
