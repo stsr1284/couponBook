@@ -14,7 +14,7 @@
 <script>
 	
 	alert("아이디 또는 비밀번호가 일치하지않습니다.");
-	window.location.href ="loginpage.do"
+	window.location.href ="loginPage.do"
 </script>
 
 

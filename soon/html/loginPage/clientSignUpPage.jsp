@@ -12,22 +12,26 @@
 <body>
 	<h1> 쿠폰북 </h1>
     <div class="signUpForm">
-        <form action="" method = "POST">
+        <form action="clientInsert.do" method = "POST">
             <div class="inputArea">
-				<input type ="text" name ="userId" autocomplete="off" required>
-                <label for ="userId"> 아이디</label>
+				<input type ="text" name ="clientId" autocomplete="off" required>
+                <label for ="clientId"> 아이디</label>
             </div >
             <div class="inputArea">
-				<input type="password" name="userPass" autocomplete="off" required >
-                <label for="userPass">비밀번호</label>
+				<input type="password" name="clientPass" autocomplete="off" required >
+                <label for="clientPass">비밀번호</label>
+            </div>
+            <div class="inputArea">
+				<input type="password" name="clientPassCheck" autocomplete="off" required >
+                <label for="clientPassCheck">비밀번호 확인</label>
             </div>
 			<div class="inputArea">
-				<input type="text" name="userNick" autocomplete="off" required >
-				<label for="userNick">닉네임</label>
+				<input type="text" name="clientNick" autocomplete="off" required >
+				<label for="clientNick">닉네임</label>
 			</div>
             <div class="inputArea">
-				<input type="text" name="userPhone" autocomplete="off" required >
-                <label for="userPhone">전화번호</label>
+				<input type="text" name="clientPhone" autocomplete="off" required >
+                <label for="clientPhone">전화번호</label>
             </div>
             <div class="btnArea">
 				<button type="submit">회원가입</button>
