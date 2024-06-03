@@ -5,7 +5,7 @@ body {
 .searchWrapper {
 	width: 100%;
 	height: 100vh;
-	background-color: red;
+	/* background-color: red; */
 }
 
 .searchContainer {
@@ -51,7 +51,7 @@ body {
 .storePlaceWrapper {
 	width: 500px;
 	height: 100%;
-	background-color: purple;
+	/* background-color: purple; */
 	display: flex;
 	flex-direction: column;
 	overflow-x: auto;
