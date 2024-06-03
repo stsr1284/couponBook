@@ -1,3 +1,7 @@
+body {
+	background-color: rgb(255, 253, 208);
+}
+
 .couponsWrapper {
 	padding-top: 20px;
 	padding-bottom: 30px;
@@ -6,5 +10,4 @@
 	align-items: center;
 	justify-content: center;
 	gap: 18px;
-	background-color: rgb(255, 253, 208);
 }
