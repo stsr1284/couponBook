@@ -48,11 +48,12 @@
 }
 
 .couponBox {
+	color: black;
 	cursor: pointer;
 }
 
 .searchIcon {
 	margin-right: 10px;
-	height: 38%;
+	height: 20px;
 	cursor: pointer;
 }
