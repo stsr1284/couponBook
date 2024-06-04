@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 253, 208);
+}
+
+.signUpPageWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+    width: 87%;
+    max-width: 500px;
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    background-color:  #FFD700;
+    margin-bottom: 20px;
+}
+
+.signUpPageContainer {
+    width: 100%;
+}
+
+.signUpPageContainer h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signUpFormWrapper {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.signUpForm {
+    width: 50%;
+    min-width: 90%;
+    text-align: center;
+}
+
+.formInput input {
+    height: 27px;
+    width: 95%; 
+    max-width: 250px;
+    border: none;
+    margin-bottom: 12px;
+    padding-left: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    outline: none;
+    border-radius: 10px;
+}
+
+.formBtn {
+    margin-top: 15px;
+}
+
+.signUpBtn {
+    border-radius: 11px;
+    padding: 4px 8px;
+    margin-right: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.backBtn {
+    border-radius: 11px;
+    padding: 4px 8px;
+    margin-left: 10px;
+    text-decoration-line: none;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.storeTitle {
+    padding-left: 5%;
+    text-align: start;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.storeBar {
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
