@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
-	<link rel="stylesheet" href="../../resources/static/css/clientPage/clientSearchStyle.css">
-	<!-- <link rel="stylesheet" href="../../css/headerStyle.css">
-	<link rel="stylesheet" href="../../css/clientPage/clientSearchStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
+	<link rel="stylesheet" href="../../resources/static/css/clientPage/clientSearchStyle.css"> -->
+	<link rel="stylesheet" href="../../css/headerStyle.css">
+	<link rel="stylesheet" href="../../css/clientPage/clientSearchStyle.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<title>Document</title>
 </head>
 <body>
-	<%
+	<!-- <%
 		String clientid = (String)session.getAttribute("clientId");
 		if(clientid == null){
 	%>
@@ -23,7 +23,7 @@
 	</script>
 	<%
 	}
-	%>
+	%> -->
 
 	<div class="headerWrapper"> <!-- 헤더 시작 -->
         <div class="headerContainer">
@@ -32,10 +32,11 @@
 					<span class="material-symbols-outlined logoutIcon">logout</span>
 				</a>
 			</div>
-            <div class="headerSecond">쿠폰북</div>
+            <div class="headerSecond">쿠폰 검색</div>
             <div class="headerThird">
 				<a href="">
-					<span class="material-symbols-outlined couponBox">box</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+					<!-- <span class="material-symbols-outlined couponBox">box</span> -->
 				</a>
 				<a href="">
 					<!-- <img class="searchIcon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"> -->
@@ -64,14 +65,14 @@
 						<div class="btnTop">
 							<span class="storeTitle">
 								청년다방
-								<span class="storePlaceTitle">
+								<span class="storeSubTitle">
 									백석점
 								</span>
 							</span>
 						</div>
 						<div class="btmBottom">
 							<span>
-							010-xxxx-xxxx
+								010-xxxx-xxxx
 							</span>
 							<span>
 								쿠폰 발행가능
@@ -86,7 +87,7 @@
 						<div class="btnTop">
 							<span class="storeTitle">
 								고기굽는집
-								<span class="storePlaceTitle">
+								<span class="storeSubTitle">
 									백석점
 								</span>
 							</span>
