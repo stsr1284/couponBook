@@ -4,6 +4,104 @@
 }
 
 body {
+    position: relative;
+    display: flex;
+    justify-content: center;
     background-color: rgb(255, 253, 208);
 }
 
+.loginPageWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+    width: 87%;
+    max-width: 500px;
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    background-color:  #FFD700;
+}
+
+.loginPageContainer {
+    width: 100%;
+}
+
+.loginPageContainer h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loginFormWrapper {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.loginForm {
+    width: 50%;
+    min-width: 90%;
+    text-align: center;
+}
+
+.formInput input {
+    height: 30px;
+    width: 95%; 
+    max-width: 250px;
+    border: none;
+    margin-bottom: 7px;
+    padding-left: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    outline: none;
+    border-radius: 10px;
+}
+
+.memberinfoRadio {
+    overflow-x: hidden;
+    padding-bottom: 3px;
+}
+
+.memberinfoRadio button {
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    background-color: rgb(255, 253, 208);
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    padding: 7px;
+    
+}
+
+.radioSelect {
+    text-wrap: nowrap;
+}
+
+.radioLabel {
+    margin-right: 10px;
+    text-wrap: nowrap;
+    font-size: 14px;
+}
+
+.toSignUp {
+    margin-top: 20px;
+}
+
+.toSignUp :first-child {
+    margin-right: 10px;
+}
+
+.toSignUp a {
+    color: black;
+    text-decoration-line: none; 
+    padding: 6px;
+    border: none;
+    background-color: white;
+    font-size: 13px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    
+}
