@@ -5,8 +5,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
-	<link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css">
+	<link rel="stylesheet" href="../resources/static/css/headerStyle.css">
+	<link rel="stylesheet" href="../resources/static/css/ownerPage/ownerMainStyle.css">
 	<!-- <link rel="stylesheet" href="../../css/headerStyle.css">
 	<link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
@@ -27,7 +27,7 @@
 	<div class="headerWrapper"> <!-- 헤더 시작 -->
         <div class="headerContainer">
             <div class="headerFirst">
-				<a href="../loginPage/logOut.do"><span class="material-symbols-outlined logoutIcon">logout</span></a>	
+				<a href=""><span class="material-symbols-outlined logoutIcon">logout</span></a>	
 			</div>
             <div class="headerSecond">쿠폰북</div>
             <div class="headerThird">
@@ -113,67 +113,55 @@
 				<div class="requestList">
 					<div class="requestListText">요청목록</div>
 
-					<!-- 반복시작 -->
 					<c:forEach items="${owner_request_list}" var="couponBook">
+						<!-- 반복시작 -->
 						<c:choose>
                         	<c:when test="${couponBook.requestType == 1}">
-								<div class="requestWrapper"> <!-- 반복 시작 스탬프 요청-->
-									<span class="requestWrapperFirst">스탬프</span>
-									<span class="userNameText">${couponBook.clientNick}</span>
-									<span class="responseWrapper">
-										<form action="coupon_stamp_approve.do" method="POST">
-											<select name="addStamp">
-												<option value=1 hidden>스탬프개수</option>
-												<option value=1>1</option>
-												<option value=2>2</option>
-												<option value=3>3</option>
-												<option value=4>4</option>
-												<option value=5>5</option>
-												<option value=6>6</option>
-												<option value=7>7</option>
-												<option value=8>8</option>
-												<option value=9>9</option>
-												<option value=10>10</option>
-											</select>
-											
-											<input type="hidden" name="clientId" value="${couponBook.clientId}">
-											<input type="hidden" name="storeSEQ" value="${couponBook.storeSEQ}">
-											<input type="hidden" name="requestSEQ" value="${couponBook.requestSEQ}">
-											
-											<button type="submit">승인</button>
-											<button class="reject" type="submit" formaction="coupon_stamp_refuse.do">거절</button>
-										</form>
-									</span>
-								</div>
-							</c:when>
-						</c:choose>
-						 
-						 
-						<c:choose>
-							<c:when test="${couponBook.requestType == 0}">
-								<div class="requestWrapper"> 
-									<span class="requestWrapperFirst">
-										<span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F19E39"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg></span>
-										<span>쿠폰</span>
-									</span>
-									<span class="userNameText">${couponBook.clientNick}</span>
-									<span class="responseWrapper">
-										<form action="coupon_stamp_approve.do" method="POST">
-										
-											<input type="hidden" name="addStamp" value=0>
-											<input type="hidden" name="clientId" value="${couponBook.clientId}">
-											<input type="hidden" name="storeSEQ" value="${couponBook.storeSEQ}">
-											<input type="hidden" name="requestSEQ" value="${couponBook.requestSEQ}">
-											
-											<button type="submit">승인</button>
-											<button class="reject" type="submit" formaction="coupon_stamp_refuse.do">거절</button>
-										</form>
-									</span>
-								</div> <!-- 쿠폰 사용 요청 끝 -->
-							</c:when>
-						</c:choose>
-					</c:forEach>	
-					<!-- 반복 끝 -->
+					<div class="requestWrapper"> <!-- 반복 시작 스탬프 요청-->
+						<span class="requestWrapperFirst">스탬프</span>
+						<span class="userNameText">닉네임</span>
+						<span class="responseWrapper">
+							<form action="" method="POST">
+								<select id="" name="">
+									<option value="1" hidden>스탬프개수</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+								<button type="submit">승인</button>
+								<button class="reject" type="submit">거절</button>
+							</form>
+						</span>
+					</div> <!-- 반복 끝 -->
+				</c:when>
+			</c:choose>
+
+			<c:choose>
+				<c:when test="${couponBook.requestType == 0}">
+					<div class="requestWrapper"> <!-- 반복 시작 쿠폰 사용 요청-->
+						<span class="requestWrapperFirst">
+							<span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F19E39"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg></span>
+							<span>쿠폰</span>
+						</span>
+						<span class="userNameText">닉네임</span>
+						<span class="responseWrapper">
+							<form action="" method="POST">
+								<button type="submit">승인</button>
+								<button class="reject" type="submit">거절</button>
+							</form>
+						</span>
+					</div> <!-- 쿠폰 사용 요청 끝 -->
+				</c:when>
+			</c:choose>
+		</c:forEach>	
+		<!-- 반복 끝 -->
 				</div>
 			</div>
 			</div>
