@@ -5,23 +5,19 @@ body {
 .couponDetailWrapper {
 	width: 100vw;
 	height: 100vh;
-	display: flex;
-	justify-content: center;
-
-	background-color: red;
 }
 
 .couponDetailBox {
-	width: 100%;
-	max-width: 600px;
-	height: 50%;
 	margin-top: 40px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .couponDetailHeade {
-	margin: 10px 0;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	text-align: center;
 }
 
@@ -35,13 +31,112 @@ body {
 }
 
 .couponDetailBody {
-	height: 100%;
+	display: flex;
+	width: 98%;
+	max-width: 500px;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+	position: relative;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.couponWrapper {
+	margin-top: 5px;
+	width: 92%;
+	max-width: 500px;
+	height: 70px;
+	/* margin-top: 5%; */
+	margin-left: 4%;
+	margin-right: 4%;
+	
+	/* background-color: red; */
+}
+
+.couponContainer {
 	width: 100%;
-	background-color: skyblue;
+	height: 100%;
+	border-radius: 20px;
+	text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background-color: #fbfbfb;
+}
+
+.stamps {
+	height: 63px;
+	padding-top: 6px;
+	margin-left: 1px;
+	margin-right: 1px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, auto);
+	justify-items: center;
+}
+
+.stamp {
+	width: 22px;
+	height: 22px;
+	border: 2px solid #333;
+    border-radius: 50px;
+}
+
+.stampActive {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFD700" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.5 17 14 18 21 12 18 6 21 7 14 2 9.5 9 8.5 12 2"/></svg>') center/100% no-repeat;
+}
+
+.stampHidden {
+	/* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFD700" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.5 17 14 18 21 12 18 6 21 7 14 2 9.5 9 8.5 12 2"/></svg>') center/90% no-repeat; */
 }
 
 
+.menuList {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 8px;
+	width: 100%;
+	max-height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	overflow-y: auto;
+	/* background-color:brown; */
+}
 
+.menuOne {
+	display: flex;
+	padding: 0 5px;
+	font-size: 15px;
+	margin-bottom: 7px;
+	align-items: center;
+	border-radius: 5px;
+	height: 30px;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.couponBtns {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
 
+.couponBtns form button {
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	padding: 5px 8px;
+	margin-top: 3px;
+	font-size: 13px;
+	border-radius: 7px;
+	border: none;
+}
 
+.insertBtnForm {
+	display: inline;
+	margin-right: 10px;
+}
+
+.deleteBtnForm {
+	margin-left: 10px;
+	display: inline;
+}
