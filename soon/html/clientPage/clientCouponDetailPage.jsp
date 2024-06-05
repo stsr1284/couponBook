@@ -20,6 +20,12 @@
 		<input type="submit" value="쿠폰요청">
 	</form>
 	
+	<form action="coupon_issue_delete.do" metod="get">
+		<input type="hidden" name = "issueSEQ" value="${param.issueSEQ}">
+		<input type="submit" value="쿠폰삭제">
+	</form>
+	
+	
 	storeSEQ : <input type="text" value="${param.storeSEQ}">
 	clientId : <input type="text" value="${param.clientId}">
 	ownerId : <input type="text" value="${param.ownerId}">
