@@ -60,7 +60,6 @@ body {
 	display: flex;
 	justify-content: center;
 	
-	/* background-color: purple; */
 }
 
 .storePlaceContainer {
@@ -68,6 +67,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: purple;
 	
 }
 
@@ -123,13 +123,20 @@ body {
 	margin-left: 2%;
 }
 
+.storePlaceForm {
+	/* width: 100%; */
+	width: 230px;
+	background-color: aqua;
+}
+
 
 .storePlaceBtn {
 	margin-top: 13px;
 	height: 60px;
 	width: 95%;
-	/* width: 50%; */
 	max-width: 250px;
+
+	/* width: 250px; */
 	border: none;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 	border-radius: 12px;
@@ -143,7 +150,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	/* background-color: pink; */
+	background-color: pink;
 }
 
 .btnLeft {
@@ -172,6 +179,7 @@ body {
 	padding: 12px 4px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
+	text-wrap: wrap;
 	margin: 1px 5px;
 	/* background-color: blueviolet; */
 }
