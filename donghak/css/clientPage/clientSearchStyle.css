@@ -81,7 +81,7 @@ body {
 	text-align: center;
 	border-bottom: solid 1.5px black;
 }
-
+/* 
 .storePlaceBtn {
 	margin-top: 17px;
 	height: 60px;
@@ -98,6 +98,79 @@ body {
 	text-align: start;
 	padding-left: 8%;
 	padding-right: 8%;
+} */
+
+.storeTitle {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.storeSubTitle {
+	color: gray;
+	font-size: 15px;
+}
+
+.storePlaceBtnBottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.couponValid {
+	margin-right: 5%;
+	margin-left: 2%;
+}
+
+
+.storePlaceBtn {
+	margin-top: 13px;
+	height: 60px;
+	width: 95%;
+	/* width: 50%; */
+	max-width: 250px;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+	border-radius: 12px;
+	cursor: pointer;
+	text-wrap: nowrap;
+	overflow-x: hidden;
+	text-align: start;
+	padding-left: 4%;
+	padding-right: 4%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	/* background-color: pink; */
+}
+
+.btnLeft {
+	width: 70%;
+	margin-left: 5px;
+}
+
+.btmBottom {
+	width: 100%;
+	overflow-x: auto;
+
+}
+
+.btnTop {
+	width: 100%;
+	overflow-x: auto;
+
+}
+
+.btnRight {
+	/* height: 100%; */
+	width: 30%;
+	border: solid 0.5px gray;
+	background-color: whitesmoke;
+	margin-left: 10px;
+	padding: 12px 4px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin: 1px 5px;
+	/* background-color: blueviolet; */
 }
 
 .storeTitle {
@@ -107,6 +180,11 @@ body {
 
 .storeSubTitle {
 	color: gray;
+	font-size: 15px;
+}
+
+.storePlaceTitle {
+	margin-left: 8%;
 	font-size: 15px;
 }
 
