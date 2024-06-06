@@ -61,7 +61,7 @@
                             <input type="hidden" name = "clientId" value="${param.clientId}">
                             <input type="hidden" name = "ownerId" value="${param.ownerId}">
                             <input type="hidden" name = "requestType" value=1>
-                            <button type="submit">쿠폰요청</button>
+                            <button type="submit">스탬프요청</button>
                         </form>
                         <form class="deleteBtnForm" action="coupon_issue_delete.do" metod="get">
                             <input type="hidden" name = "issueSEQ" value="${param.issueSEQ}">
