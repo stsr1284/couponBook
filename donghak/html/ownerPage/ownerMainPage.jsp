@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
-	<link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css">
+	<!-- <link rel="stylesheet" href="../../resources/static/css/headerStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css"> -->
 	<link rel="stylesheet" href="../../css/headerStyle.css">
 	<link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<title>ownerMain</title>
 </head>
 <body>
-	<%
+	<!-- <%
 		String ownerid = (String)session.getAttribute("ownerId");
 		if(ownerid == null){
 	%>
@@ -23,7 +23,7 @@
 		</script>
 	<%
 	}
-	%>
+	%> -->
 	<div class="headerWrapper"> <!-- 헤더 시작 -->
         <div class="headerContainer">
             <div class="headerFirst">
@@ -142,15 +142,15 @@
 											<input type="hidden" name="storeSEQ" value="${couponBook.storeSEQ}">
 											<input type="hidden" name="requestSEQ" value="${couponBook.requestSEQ}">
 											
-											<button type="submit">승인</button>
+											<button class="approve" type="submit">승인</button>
 											<button class="reject" type="submit" formaction="coupon_stamp_refuse.do">거절</button>
 										</form>
 									</span>
 								</div>
 							</c:when>
 						</c:choose>
-						 
-						 
+						
+						
 						<c:choose>
 							<c:when test="${couponBook.requestType == 0}">
 								<div class="requestWrapper"> 
@@ -161,13 +161,13 @@
 									<span class="userNameText">${couponBook.clientNick}</span>
 									<span class="responseWrapper">
 										<form action="coupon_stamp_approve.do" method="POST">
-										
+											
 											<input type="hidden" name="addStamp" value=0>
 											<input type="hidden" name="clientId" value="${couponBook.clientId}">
 											<input type="hidden" name="storeSEQ" value="${couponBook.storeSEQ}">
 											<input type="hidden" name="requestSEQ" value="${couponBook.requestSEQ}">
 											
-											<button type="submit">승인</button>
+											<button class="approve" type="submit">승인</button>
 											<button class="reject" type="submit" formaction="coupon_stamp_refuse.do">거절</button>
 										</form>
 									</span>
@@ -180,7 +180,9 @@
 			</div>
 			</div>
 		</div>
-		<script src="../resources/static/js/couponUpdatePage.js"></script>
-		<!-- <script src="../../js/couponUpdatePage.js"></script> -->
+		<!-- <script src="../resources/static/js/couponUpdatePage.js"></script> -->
+		<!-- <script src="../resources/static/js/ownerRequestCheck.js"></script> -->
+		<script src="../../js/couponUpdatePage.js"></script>
+		<script src="../../js/ownerRequestCheck.js"></script>
 		</html>
 	</body>
