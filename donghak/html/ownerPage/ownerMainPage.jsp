@@ -1,19 +1,19 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="../../resources/static/css/headerStyle.css"> -->
-	<!-- <link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css"> -->
-	<link rel="stylesheet" href="../../css/headerStyle.css">
-	<link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css">
+	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
+	<link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css">
+	<!-- <link rel="stylesheet" href="../../css/headerStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<title>ownerMain</title>
 </head>
 <body>
-	<!-- <%
+	<%
 		String ownerid = (String)session.getAttribute("ownerId");
 		if(ownerid == null){
 	%>
@@ -23,7 +23,7 @@
 		</script>
 	<%
 	}
-	%> -->
+	%>
 	<div class="headerWrapper"> <!-- 헤더 시작 -->
         <div class="headerContainer">
             <div class="headerFirst">
@@ -180,9 +180,9 @@
 			</div>
 			</div>
 		</div>
-		<!-- <script src="../resources/static/js/couponUpdatePage.js"></script> -->
-		<!-- <script src="../resources/static/js/ownerRequestCheck.js"></script> -->
-		<script src="../../js/couponUpdatePage.js"></script>
-		<script src="../../js/ownerRequestCheck.js"></script>
+		<script src="../resources/static/js/couponUpdatePage.js"></script>
+		<script src="../resources/static/js/ownerRequestCheck.js"></script>
+		<!-- <script src="../../js/couponUpdatePage.js"></script> -->
+		<!-- <script src="../../js/ownerRequestCheck.js"></script> -->
 		</html>
 	</body>
