@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
 	<link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css">
-	<!-- <link rel="stylesheet" href="../../css/headerStyle.css"> -->
-	<!-- <link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css"> -->
+	<link rel="stylesheet" href="../../css/headerStyle.css">
+	<link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<title>ownerMain</title>
 </head>
@@ -95,6 +95,7 @@
 				<div class="menuList">
 					<div class="menuRow"> <!-- 반복 시작-->
 						<span>메뉴명</span> <!-- 메뉴 명-->
+						<span>1000</span> <!-- 메뉴 명-->
 						<button>취소</button> <!-- 취소버튼-->
 					</div> <!-- 반복 끝 -->
 				</div>
