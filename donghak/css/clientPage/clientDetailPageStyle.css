@@ -127,7 +127,7 @@ body {
 }
 
 .couponBtns form button {
-	background-color: white;
+	/* background-color: white; */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	padding: 5px 8px;
 	margin-top: 7px;
@@ -144,4 +144,8 @@ body {
 .deleteBtnForm {
 	margin-left: 10px;
 	display: inline;
+}
+
+.detailToHome {
+	margin-right: 6px;
 }
