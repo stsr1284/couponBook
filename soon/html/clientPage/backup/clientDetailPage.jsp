@@ -1,5 +1,5 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,8 +8,8 @@
     <title>쿠폰북</title>
     <link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
     <link rel="stylesheet" href="../../resources/static/css/clientPage/clientDetailPageStyle.css">
-    <!-- <link rel="stylesheet" href="../../css/headerStyle.css">
-    <link rel="stylesheet" href="../../css/clientPage/clientDetailPageStyle.css"> -->
+    <!-- <link rel="stylesheet" href="../../css/headerStyle.css"> -->
+    <!-- <link rel="stylesheet" href="../../css/clientPage/clientDetailPageStyle.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 </head>
 <body>
@@ -22,14 +22,8 @@
             </div>
             <div class="headerSecond">쿠폰북</div>
             <div class="headerThird">
-                <a href="clientMyCouponPage.do">
-                    <!-- <span class="material-symbols-outlined couponBox">box</span> -->
-                    <span class="material-symbols-outlined couponBox">box</span>
-				</a>
-				<a class="detailToHome" href="clientMainPage.do">
-                    <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
-                    <!-- <img class="searchIcon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"> -->
-				</a>
+                <span class="material-symbols-outlined couponBox">box</span>
+                <img class="searchIcon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
             </div>
         </div>
     </div> <!-- 헤더 종료 -->
@@ -58,18 +52,18 @@
                     </div>
                     <div class="couponBtns">
                         <form class="insertBtnForm" action="client_request_insert.do" metod="get">
-                             <input type="hidden" name = "storeSEQ" value="${param.storeSEQ}">
+                            <input type="hidden" name = "storeSEQ" value="${param.storeSEQ}">
                             <input type="hidden" name = "clientId" value="${param.clientId}">
                             <input type="hidden" name = "ownerId" value="${param.ownerId}">
                             <input type="hidden" name = "issueSEQ" value="${param.issueSEQ}">
                             <input type="hidden" name = "requestType" value=1>
-                            <button class="stampRequestBtn" type="submit">스탬프요청</button>
+                            <button type="submit">스탬프요청</button>
                         </form>
                         <form class="deleteBtnForm" action="coupon_issue_delete.do" metod="get">
                         	<input type="hidden" name = "storeSEQ" value="${param.storeSEQ}">
                             <input type="hidden" name = "clientId" value="${param.clientId}">
                             <input type="hidden" name = "issueSEQ" value="${param.issueSEQ}">
-                            <button class="couponDelteBtn" type="submit">쿠폰삭제</button>
+                            <button type="submit">쿠폰삭제</button>
                         </form>
                     </div>
                
@@ -86,8 +80,6 @@
     </div>
     </c:forEach>
       
-    	<script src="../../resources/static/js/detailRequestCheck.js"></script>
-	<!-- <script src="../../js/detailRequestCheck.js"></script> -->
 </body>
 </html>
     
