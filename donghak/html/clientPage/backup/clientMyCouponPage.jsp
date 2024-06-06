@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> --%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -36,7 +36,8 @@
             <div class="headerThird">
 				<a href="">
 					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
-				</a><a href=""></a>
+				</a>
+				<a href=""></a>
             </div>
         </div>
     </div> <!-- 헤더 종료 -->
@@ -52,47 +53,30 @@
 				<!-- 반복 시작 -->
 				<form class="storePlaceForm" action="" method="POST">
 					<button class="storePlaceBtn" type="submit">
-						<div class="btnTop">
-							<span class="storeTitle">
-								청년다방
-								<span class="storeSubTitle">
-									백석점
+						<div class="btnLeft">
+							<div class="btnTop">
+								<span class="storeTitle">
+									청년다방
+									<span class="storeSubTitle">
+										백석점
+									</span>
 								</span>
-							</span>
+							</div>
+							<div class="btmBottom">
+								<span>
+									2024-03-24
+								</span>
+								<span>
+									에이드 택 1sdfdsfds
+								</span>
+							</div>
 						</div>
-						<div class="btmBottom">
-							<span>
-							2024-03-24
-						</span>
-						<span>
-							에이드 택 1
-						</span>
-					</div>
-				</button>
-			</form>
-			<!-- 반복 끝 -->
-			<!-- 반복 시작 -->
-			<form class="storePlaceForm" action="" method="POST">
-				<button class="storePlaceBtn" type="submit">
-					<div class="btnTop">
-						<span class="storeTitle">
-							고기굽는집
-							<span class="storeSubTitle">
-								백석점
-							</span>
-						</span>
-					</div>
-					<div class="btmBottom">
-						<span>
-							2024-11-24
-						</span>
-						<span>
-							아메리카노
-						</span>
+						<div class="btnRight">
+							쿠폰 사용
 						</div>
 					</button>
 				</form>
-				<!-- 반복 끝 -->
+			<!-- 반복 끝 -->
 			</div>
 		</div>
 	</div>
