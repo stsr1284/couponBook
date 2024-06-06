@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> --%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
 	<link rel="stylesheet" href="../../resources/static/css/clientPage/clientMyCouponStyle.css?after">
-	<!-- <link rel="stylesheet" href="../../css/headerStyle.css">
-	<link rel="stylesheet" href="../../css/clientPage/clientMyCouponStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../css/headerStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../css/clientPage/clientMyCouponStyle.css"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<title>Document</title>
 </head>
@@ -36,7 +36,8 @@
             <div class="headerThird">
 				<a href="">
 					<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
-				</a><a href=""></a>
+				</a>
+				<a href=""></a>
             </div>
         </div>
     </div> <!-- 헤더 종료 -->
@@ -97,5 +98,7 @@
 		</div>
 	</div>
 	
+	<script src="./../resources/static/js/couponUseCheck.js"></script>
+	<!-- <script src="../../js/couponUseCheck.js"></script> -->
 </body>
 </html>
