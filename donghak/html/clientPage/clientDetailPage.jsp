@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쿠폰북</title>
-    <!-- <link rel="stylesheet" href="../resources/static/css/headerStyle.css"> -->
-    <!-- <link rel="stylesheet" href="../resources/static/css/clientPage/clientDetailPageStyle.css"> -->
-    <link rel="stylesheet" href="../../css/headerStyle.css">
-    <link rel="stylesheet" href="../../css/clientPage/clientDetailPageStyle.css">
+    <link rel="stylesheet" href="../resources/static/css/headerStyle.css">
+    <link rel="stylesheet" href="../resources/static/css/clientPage/clientDetailPageStyle.css">
+    <!-- <link rel="stylesheet" href="../../css/headerStyle.css"> -->
+    <!-- <link rel="stylesheet" href="../../css/clientPage/clientDetailPageStyle.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 </head>
 <body>
@@ -55,6 +55,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="couponBtns">
+                        <form class="insertBtnForm" action="client_request_insert.do" metod="get">
+                            <input type="hidden" name = "storeSEQ" value="${param.storeSEQ}">
+                            <input type="hidden" name = "clientId" value="${param.clientId}">
+                            <input type="hidden" name = "ownerId" value="${param.ownerId}">
+                            <input type="hidden" name = "requestType" value=1>
+                            <button type="submit">쿠폰요청</button>
+                        </form>
+                        <form class="deleteBtnForm" action="coupon_issue_delete.do" metod="get">
+                            <input type="hidden" name = "issueSEQ" value="${param.issueSEQ}">
+                            <button type="submit">쿠폰삭제</button>
+                        </form>
+                    </div>
                 <!-- </c:forEach> -->
                 <div class="menuList">
                     <div class="menuOne"> <!-- 반복 시작-->
@@ -63,19 +76,6 @@
                             5000
                         </span>
                     </div> <!-- 반복 끝-->
-                </div>
-                <div class="couponBtns">
-                    <form class="insertBtnForm" action="client_request_insert.do" metod="get">
-                        <input type="hidden" name = "storeSEQ" value="${param.storeSEQ}">
-                        <input type="hidden" name = "clientId" value="${param.clientId}">
-                        <input type="hidden" name = "ownerId" value="${param.ownerId}">
-                        <input type="hidden" name = "requestType" value=1>
-                        <button type="submit">쿠폰요청</button>
-                    </form>
-                    <form class="deleteBtnForm" action="coupon_issue_delete.do" metod="get">
-                        <input type="hidden" name = "issueSEQ" value="${param.issueSEQ}">
-                        <button type="submit">쿠폰삭제</button>
-                    </form>
                 </div>
             </div>
         </div>
