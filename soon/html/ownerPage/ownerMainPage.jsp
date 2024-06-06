@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
 	<link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css">
-	<!-- <link rel="stylesheet" href="../../css/headerStyle.css">
-	<link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../css/headerStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<title>ownerMain</title>
 </head>
@@ -41,7 +41,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
 			<h3 id="modalTitle">상품 설정</h3>
-			<form action="" method = "POST">
+			<form class="couponUpdateFormWrapper" action="" method = "POST">
 				<div class="couponUpdateForm">
 					<label for="">상품명</label>
 					<input type ="text" name ="couponService" autocomplete="off" required value="">
@@ -56,7 +56,7 @@
 						<option value="6">제한 없음</option>
 					</select>
 				</div>
-					<button type="submit">등록</button>
+				<button class="couponUpdateBtn" type="submit">등록</button>
 			</form>
         </div>
     </div>
@@ -86,16 +86,18 @@
 			<div class="menuWrapper">
 				<span>메뉴판</span>
 				<div class="menuForm">
-					<form class="menuForm">
+					<form action="" method="POST">
 							<input type="text" placeholder="메뉴" required>
+							<input type="text" placeholder="가격" required>
 							<button type="submit">등록</button>
 					</form>
 				</div>
 				<div class="menuList">
 					<div class="menuRow"> <!-- 반복 시작-->
 						<span>메뉴명</span> <!-- 메뉴 명-->
+						<span>1000</span> <!-- 메뉴 명-->
 						<button>취소</button> <!-- 취소버튼-->
-					</div>
+					</div> <!-- 반복 끝 -->
 				</div>
 			</div>
 		</div>
@@ -140,15 +142,15 @@
 											<input type="hidden" name="storeSEQ" value="${couponBook.storeSEQ}">
 											<input type="hidden" name="requestSEQ" value="${couponBook.requestSEQ}">
 											
-											<button type="submit">승인</button>
+											<button class="approve" type="submit">승인</button>
 											<button class="reject" type="submit" formaction="coupon_stamp_refuse.do">거절</button>
 										</form>
 									</span>
 								</div>
 							</c:when>
 						</c:choose>
-						 
-						 
+						
+						
 						<c:choose>
 							<c:when test="${couponBook.requestType == 0}">
 								<div class="requestWrapper"> 
@@ -159,13 +161,13 @@
 									<span class="userNameText">${couponBook.clientNick}</span>
 									<span class="responseWrapper">
 										<form action="coupon_stamp_approve.do" method="POST">
-										
+											
 											<input type="hidden" name="addStamp" value=0>
 											<input type="hidden" name="clientId" value="${couponBook.clientId}">
 											<input type="hidden" name="storeSEQ" value="${couponBook.storeSEQ}">
 											<input type="hidden" name="requestSEQ" value="${couponBook.requestSEQ}">
 											
-											<button type="submit">승인</button>
+											<button class="approve" type="submit">승인</button>
 											<button class="reject" type="submit" formaction="coupon_stamp_refuse.do">거절</button>
 										</form>
 									</span>
@@ -179,5 +181,8 @@
 			</div>
 		</div>
 		<script src="../resources/static/js/couponUpdatePage.js"></script>
+		<script src="../resources/static/js/ownerRequestCheck.js"></script>
+		<!-- <script src="../../js/couponUpdatePage.js"></script> -->
+		<!-- <script src="../../js/ownerRequestCheck.js"></script> -->
+		</html>
 	</body>
-	</html>

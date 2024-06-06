@@ -42,7 +42,7 @@
         <c:forEach items="${coupon_issue_list}" var="couponBook">
         	
 	        <div class="couponsContainer">
-	            <a class="couponContainer" href="clientCouponDetailPage.do?storeSEQ=${couponBook.storeSEQ}&clientId=${sessionScope.clientId}&ownerId=${couponBook.ownerId}&issueSEQ=${couponBook.issueSEQ}">
+	            <a class="couponContainer" href="clientDetailPage.do?storeSEQ=${couponBook.storeSEQ}&clientId=${sessionScope.clientId}&ownerId=${couponBook.ownerId}&issueSEQ=${couponBook.issueSEQ}">
 	                <div class="storeInformContinaer">
 	                    <span class="storeSubject">${couponBook.storeName}</span>
 	                    <span class="storePlace">${couponBook.storePlaceName}</span>
