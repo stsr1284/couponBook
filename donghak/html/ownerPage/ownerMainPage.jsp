@@ -41,7 +41,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
 			<h3 id="modalTitle">상품 설정</h3>
-			<form action="" method = "POST">
+			<form class="couponUpdateFormWrapper" action="" method = "POST">
 				<div class="couponUpdateForm">
 					<label for="">상품명</label>
 					<input type ="text" name ="couponService" autocomplete="off" required value="">
@@ -56,7 +56,7 @@
 						<option value="6">제한 없음</option>
 					</select>
 				</div>
-					<button type="submit">등록</button>
+				<button class="couponUpdateBtn" type="submit">등록</button>
 			</form>
         </div>
     </div>

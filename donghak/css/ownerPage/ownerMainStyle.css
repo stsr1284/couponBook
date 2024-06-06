@@ -126,7 +126,7 @@
 
 /* 모달 대화 상자 스타일 */
 .couponUpdateModal {
-	display: none;
+	/* display: none; */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -138,9 +138,10 @@
 }
 
 .couponUpdateForm {
+	margin-top: 45px;
     display: grid;
     grid-template-columns: 1fr 3fr; /* Adjust column widths as needed */
-    gap: 10px; /* Adjust gap between elements as needed */
+    gap: 11px; /* Adjust gap between elements as needed */
 }
 .couponUpdateForm label {
 	text-align: right;
@@ -148,10 +149,28 @@
 .couponUpdateForm input {
 	width: 90%;
 	box-sizing: border-box;
+	border-radius: 8px;
+	border: solid 1px;
+	outline: none;
+	padding-left: 7px;
 }
 .couponUpdateForm select {
 	width: 90%;
 	box-sizing: border-box;
+}
+
+.couponUpdateFormWrapper {
+	text-align: center;
+}
+
+.couponUpdateBtn {
+	padding: 5px 15px;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.14);
+	background-color: lightgray;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 20px;
 }
 
 /* 모달 대화 상자 스타일 */
@@ -181,6 +200,10 @@
 	width: 90%;
 	max-width: 200px;
     box-sizing: border-box;
+	border: solid 1px;
+	outline: none;
+	border-radius: 5px;
+	padding-left: 7px;
 }
 
 .informUpdateForm {
@@ -189,8 +212,11 @@
 
 .informUpdateForm button{
 	border: none;
+	cursor: pointer;
 	margin-top: 13px;
+	border-radius: 7px;
 	padding: 4px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.14);
 }
 
 .modalTitle {
@@ -292,4 +318,5 @@
 	background-color: lightgray;
 	border: none;
 	border-radius: 5px;
+	cursor: pointer;
 }
