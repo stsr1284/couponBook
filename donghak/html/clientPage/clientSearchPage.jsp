@@ -81,15 +81,15 @@
 							<div class="btnRight">
 								<c:choose>
 									<c:when test="${couponBook.couponService == null}">
-										쿠폰 준비중
+										쿠폰준비중
 									</c:when>
 									<c:otherwise>
-										쿠폰 발급
+										쿠폰발급
 									</c:otherwise>
 								</c:choose> 
 							</div>
 						</button>
-						<input type="hidden" name="couponService" value="${couponBook.couponService}">
+						<input id="couponServiceCheck" type="hidden" name="couponService" value="${couponBook.couponService}">
 						<input type="hidden" name="storeSEQ" value="${couponBook.storeSEQ}">
 						<input type="hidden" name="clientId" value="${sessionScope.clientId}">
 					</form>
