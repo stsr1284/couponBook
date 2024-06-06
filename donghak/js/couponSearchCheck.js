@@ -6,7 +6,7 @@ approveButton.forEach(button => {
 		const form = event.target.closest('form');
 		const input = form.querySelector('#couponServiceCheck');[]
 	
-		if (input.value == "null") {
+		if (input.value == "") {
 			alert("발행 준비중 입니다!")
 			return false;
 		}
