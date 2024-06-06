@@ -5,8 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../resources/static/css/loginPage/clientSignUpPageStyle.css">
-	<!-- <link rel="stylesheet" href="../../css/loginPage/clientSignUpPageStyle.css"> -->
+    <!-- <link rel="stylesheet" href="../../resources/static/css/loginPage/clientSignUpPageStyle.css"> -->
+	<link rel="stylesheet" href="../../css/loginPage/clientSignUpPageStyle.css">
 </head>
 <body>
     <div class="signUpPageWrapper">
@@ -15,10 +15,10 @@
             <div class="signUpFormWrapper">
                 <form class="signUpForm" action="clientInsert.do" method = "POST">
                     <div class="formInput">
-                        <input type ="text" name ="clientId" autocomplete="off" required placeholder="아이디">
+                        <input id="userId" type ="text" name ="clientId" autocomplete="off" required placeholder="아이디">
                     </div >
                     <div class="formInput">
-                        <input type="password" name="clientPass" autocomplete="off" required placeholder="비밀번호">
+                        <input id="userPass" type="password" name="clientPass" autocomplete="off" required placeholder="비밀번호">
                     </div>
                     <div class="formInput">
                         <input type="password" name="clientPassCheck" autocomplete="off" required placeholder="비밀번호 확인">
@@ -27,7 +27,7 @@
                         <input type="text" name="clientNick" autocomplete="off" required placeholder="닉네임">
                     </div>
                     <div class="formInput">
-                        <input type="text" name="clientPhone" autocomplete="off" required placeholder="전화번호">
+                        <input id="userTel" type="text" name="clientPhone" autocomplete="off" required placeholder="전화번호">
                     </div>
                     <div class="formBtn">
                         <button class="signUpBtn" type="submit">회원가입</button>
@@ -37,6 +37,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../../js/clientSignUpCheck.js"></script>
 
     
 </body>
