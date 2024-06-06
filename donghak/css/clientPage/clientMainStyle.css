@@ -11,3 +11,15 @@ body {
 	justify-content: center;
 	gap: 18px;
 }
+
+.couponHeadLine {
+	width: 300px;
+}
+
+.couponHeadLine p {
+	display: inline;
+	font-size: 18px;
+	padding: 0px 12px;
+	border-bottom: solid 1px gray;
+	color: gray;
+}
