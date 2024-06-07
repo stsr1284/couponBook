@@ -81,10 +81,12 @@
 							<div class="btnRight">
 								<c:choose>
 									<c:when test="${couponBook.couponService == null}">
-										쿠폰준비중
+										<p>쿠폰</p>
+										<p>준비중</p>
 									</c:when>
 									<c:otherwise>
-										쿠폰발급
+										<p>쿠폰</p>
+										<p>발급</p>
 									</c:otherwise>
 								</c:choose> 
 							</div>
