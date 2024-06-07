@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../resources/static/css/headerStyle.css">
 	<link rel="stylesheet" href="../../resources/static/css/ownerPage/ownerMainStyle.css">
-	<!-- <link rel="stylesheet" href="../../css/headerStyle.css"> -->
-	<!-- <link rel="stylesheet" href="../../css/ownerPage/ownerMainStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../../css/headerStyle.css"> -->
+	<!-- <link rel="stylesheet" href="../../../css/ownerPage/ownerMainStyle.css"> -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 	<title>ownerMain</title>
 </head>
@@ -56,7 +56,7 @@
 						<option value="6">제한 없음</option>
 					</select>
 				</div>
-				<button class="couponUpdateBtn" type="submit">등록</button>
+				<button class="couponUpdateBtn" id="serviceUpdateBtn" type="submit">등록</button>
 			</form>
         </div>
     </div>
@@ -81,7 +81,7 @@
 				<label for="">업체 주소</label>
 				<input type="text" name="storeAddress" autocomplete="off" required value=""> <!-- value에 값 넣어줘야됨-->
 				</div>
-				<button type="submit">기간 수정</button>
+				<button id="storeUpdateBtn" type="submit">기간 수정</button>
 			</form>
 			<div class="menuWrapper">
 				<span>메뉴판</span>
@@ -182,7 +182,7 @@
 		</div>
 		<script src="../resources/static/js/couponUpdatePage.js"></script>
 		<script src="../resources/static/js/ownerRequestCheck.js"></script>
-		<!-- <script src="../../js/couponUpdatePage.js"></script> -->
-		<!-- <script src="../../js/ownerRequestCheck.js"></script> -->
+		<!-- <script src="../../../js/couponUpdatePage.js"></script> -->
+		<!-- <script src="../../../js/ownerRequestCheck.js"></script> -->
 		</html>
 	</body>
